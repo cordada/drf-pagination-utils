@@ -122,7 +122,7 @@ urllib3==1.26.18
     #   twine
 webencodings==0.5.1
     # via bleach
-zipp==3.15.0
+zipp==3.19.1
     # via
     #   importlib-metadata
     #   importlib-resources
