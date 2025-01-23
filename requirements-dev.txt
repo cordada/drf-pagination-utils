@@ -116,7 +116,7 @@ typing-extensions==4.12.2
     #   rich
 unittest-xml-reporting==3.2.0
     # via -r requirements-dev.in
-urllib3==1.26.18
+urllib3==1.26.19
     # via
     #   requests
     #   twine
