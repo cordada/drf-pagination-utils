@@ -28,6 +28,8 @@ flake8==7.1.1
     #   flake8-formatter-junit-xml
 flake8-formatter-junit-xml==0.0.6
     # via -r requirements-dev.in
+id==1.5.0
+    # via twine
 idna==3.7
     # via requests
 importlib-metadata==6.0.0
@@ -58,20 +60,18 @@ mdurl==0.1.2
     # via markdown-it-py
 more-itertools==9.1.0
     # via jaraco-classes
-mypy==1.13.0
+mypy==1.14.1
     # via -r requirements-dev.in
 mypy-extensions==1.0.0
     # via
     #   black
     #   mypy
-packaging==23.0
+packaging==24.2
     # via
     #   black
     #   twine
 pathspec==0.9.0
     # via black
-pkginfo==1.9.6
-    # via twine
 platformdirs==2.4.0
     # via black
 pycodestyle==2.12.1
@@ -88,6 +88,7 @@ readme-renderer==37.3
     # via twine
 requests==2.32.2
     # via
+    #   id
     #   requests-toolbelt
     #   twine
 requests-toolbelt==0.10.1
@@ -106,7 +107,7 @@ tomli==2.0.1
     # via
     #   black
     #   mypy
-twine==6.0.1
+twine==6.1.0
     # via -r requirements-dev.in
 typing-extensions==4.12.2
     # via
