@@ -18,7 +18,7 @@ click==8.0.1
     # via black
 coverage==7.6.1
     # via -r requirements-dev.in
-cryptography==43.0.1
+cryptography==44.0.1
     # via secretstorage
 docutils==0.19
     # via readme-renderer
