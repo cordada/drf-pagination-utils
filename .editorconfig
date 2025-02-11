@@ -64,7 +64,3 @@ indent_size = 2
 [.isort.cfg]
 indent_style = space
 indent_size = 2
-
-[setup.cfg]
-indent_style = space
-indent_size = 2
