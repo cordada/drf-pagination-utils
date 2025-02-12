@@ -64,8 +64,8 @@ clean-build: ## Remove build artifacts
 	$(RM) -r build/
 	$(RM) -r dist/
 
-	find . -name '*.egg-info' -exec $(RM) -r {} +
-	find . -name '*.egg' -exec $(RM) {} +
+	find . -name '*.egg-info' -type d -prune -exec $(RM) -r {} \;
+	find . -name '*.egg' -prune -exec $(RM) -r {} \;
 
 .PHONY: install
 install: install-deps
