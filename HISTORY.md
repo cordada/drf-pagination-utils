@@ -1,5 +1,9 @@
 # History
 
+## 1.5.1 (2025-02-12)
+
+- (PR #231, 2025-02-12) deps: Update `lxml` from 4.9.1 to 5.3.1
+
 ## 1.5.0 (2025-02-12)
 
 - (PR #190, 2024-03-28) chore: Bump black from 24.1.1 to 24.3.0
