@@ -1,5 +1,9 @@
 # History
 
+## 1.5.2 (2025-02-12)
+
+- (PR #234, 2025-02-12) Improve `clean-build` Make task
+
 ## 1.5.1 (2025-02-12)
 
 - (PR #231, 2025-02-12) deps: Update `lxml` from 4.9.1 to 5.3.1
