@@ -28,16 +28,15 @@ jobs:
     strategy:
       matrix:
         python_version:
-          - "3.8.13"
           - "3.9.16"
           - "3.10.9"
 
     steps:
       - name: Check Out VCS Repository
-        uses: actions/checkout@v4.1.1
+        uses: actions/checkout@v4.2.2
 
       - name: Set Up Python ${{ matrix.python_version }}
-        uses: actions/setup-python@v5.0.0
+        uses: actions/setup-python@v5.4.0
         with:
           python-version: "${{ matrix.python_version }}"
 
@@ -45,7 +44,7 @@ jobs:
         run: make python-virtualenv PYTHON_VIRTUALENV_DIR=".pyenv"
 
       - name: Restoring/Saving Cache
-        uses: actions/cache@v4.0.0
+        uses: actions/cache@v4.2.0
         with:
           path: ".pyenv"
           key: py-v1-deps-${{ runner.os }}-${{ matrix.python_version }}-${{ hashFiles('requirements.txt') }}-${{ hashFiles('requirements-dev.txt') }}-${{ hashFiles('Makefile', 'make/**.mk') }}
@@ -68,21 +67,20 @@ jobs:
     strategy:
       matrix:
         python_version:
-          - "3.8.13"
           - "3.9.16"
           - "3.10.9"
 
     steps:
       - name: Check Out VCS Repository
-        uses: actions/checkout@v4.1.1
+        uses: actions/checkout@v4.2.2
 
       - name: Set Up Python ${{ matrix.python_version }}
-        uses: actions/setup-python@v5.0.0
+        uses: actions/setup-python@v5.4.0
         with:
           python-version: "${{ matrix.python_version }}"
 
       - name: Restoring/Saving Cache
-        uses: actions/cache@v4.0.0
+        uses: actions/cache@v4.2.0
         with:
           path: ".pyenv"
           key: py-v1-deps-${{ runner.os }}-${{ matrix.python_version }}-${{ hashFiles('requirements.txt') }}-${{ hashFiles('requirements-dev.txt') }}-${{ hashFiles('Makefile', 'make/**.mk') }}
@@ -117,7 +115,7 @@ jobs:
           make test-coverage-report
 
       - name: Upload coverage reports to Codecov
-        uses: codecov/codecov-action@v4.0.0
+        uses: codecov/codecov-action@v5.3.1
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           directory: ./test_reports/coverage/
@@ -125,14 +123,14 @@ jobs:
 
       - name: Check that compiled Python dependency manifests are up-to-date with their sources
         # FIXME: There are issues related to testing with multiple Python versions.
-        if: ${{ startsWith(matrix.python_version, '3.8.') }}
+        if: ${{ startsWith(matrix.python_version, '3.9.') }}
         run: |
           source "$PYTHON_VIRTUALENV_ACTIVATE"
           make python-deps-sync-check
 
       - name: Store Artifacts
         if: ${{ always() }}
-        uses: actions/upload-artifact@v4.3.0
+        uses: actions/upload-artifact@v4.6.0
         with:
           name: test_reports_${{ matrix.python_version }}
           path: test_reports/

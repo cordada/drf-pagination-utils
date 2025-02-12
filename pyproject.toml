@@ -1,0 +1,56 @@
+# Python Project Configuration
+#
+# Documentation:
+# - https://packaging.python.org/en/latest/specifications/pyproject-toml/
+#   (https://github.com/pypa/packaging.python.org/blob/caa20073/source/specifications/pyproject-toml.rst)
+# - https://pip.pypa.io/en/stable/reference/build-system/pyproject-toml/
+#   (https://github.com/pypa/pip/blob/24.2/docs/html/reference/build-system/pyproject-toml.md)
+# - https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html
+#   (https://github.com/pypa/setuptools/blob/v70.3.0/docs/userguide/pyproject_config.rst)
+
+[build-system]
+requires = [
+  "setuptools==70.3.0",
+  "wheel==0.45.1",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fyntex-drf-pagination-utils"
+version = "1.5.0"
+dependencies = [
+  "djangorestframework>=3.10.3",
+]
+requires-python = ">=3.8"
+authors = [
+  {name = "Fyntex TI SpA", email = "no-reply@fyntex.ai"},
+]
+description = """\
+  A library that provides custom pagination styles and pagination-related \
+  utilities for Django REST Framework."""
+license = {text = "MIT"}
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Framework :: Django",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Natural Language :: English",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+]
+dynamic = []
+
+[project.urls]
+Homepage = "https://github.com/fyntex/drf-pagination-utils/"
+
+[tool.setuptools]
+include-package-data = true
+zip-safe = false
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["*"]
+exclude = []
+namespaces = true

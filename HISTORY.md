@@ -1,5 +1,34 @@
 # History
 
+## 1.5.0 (2025-02-12)
+
+- (PR #190, 2024-03-28) chore: Bump black from 24.1.1 to 24.3.0
+- (PR #189, 2024-03-28) chore: Bump django from 3.2.24 to 3.2.25
+- (PR #192, 2024-03-28) chore: Bump the development-dependencies group with 3 updates
+- (PR #195, 2024-04-16) chore: Bump sqlparse from 0.4.4 to 0.5.0
+- (PR #194, 2024-04-18) chore: Bump idna from 3.4 to 3.7
+- (PR #196, 2024-04-18) chore: Bump the production-dependencies group with 7 updates
+- (PR #193, 2024-04-18) chore: Bump djangorestframework from 3.14.0 to 3.15.1
+- (PR #209, 2024-10-03) deps: Uninstall Python package `ipython`
+- (PR #211, 2024-10-03) chore: Bump cryptography from 42.0.4 to 43.0.1
+- (PR #215, 2024-12-18) chore: Bump the development-dependencies group across 1 directory with 5 updates
+- (PR #216, 2024-12-18) chore: Bump the production-dependencies group across 1 directory with 7 updates
+- (PR #212, 2025-01-02) chore: Bump django from 3.2.25 to 4.2.16
+- (PR #203, 2025-01-20) chore: Bump djangorestframework from 3.15.1 to 3.15.2
+- (PR #221, 2025-01-20) chore: Bump the production-dependencies group across 1 directory with 3 updates
+- (PR #220, 2025-01-20) chore: Bump django from 4.2.16 to 4.2.18
+- (PR #219, 2025-01-22) chore: Bump requests from 2.31.0 to 2.32.2
+- (PR #207, 2025-01-23) chore: Bump zipp from 3.15.0 to 3.19.1
+- (PR #206, 2025-01-23) chore: Bump certifi from 2023.7.22 to 2024.7.4
+- (PR #202, 2025-01-23) chore: Bump urllib3 from 1.26.18 to 1.26.19
+- (PR #223, 2025-02-11) chore: Bump the production-dependencies group with 2 updates
+- (PR #222, 2025-02-11) chore: Bump the development-dependencies group with 2 updates
+- (PR #224, 2025-02-11) deps: Update `setuptools` from ≥65.6.1 to 70.3.0 and `wheel` from ≥0.38.4 to 0.45.1
+- (PR #225, 2025-02-11) Replace Setuptools Configuration with Python Project Configuration
+- (PR #226, 2025-02-11) Update CI/CD workflows to obtain Python version from file
+- (PR #227, 2025-02-11) deps: Update `cryptography` from 43.0.1 to 44.0.1
+- (PR #228, 2025-02-11) Drop support for Python 3.8
+
 ## 1.4.0 (2024-02-26)
 
 - (PR #167, 2023-11-06) chore: Bump django from 3.2.20 to 3.2.23
