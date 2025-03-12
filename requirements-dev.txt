@@ -4,7 +4,7 @@
 #
 #    pip-compile --strip-extras requirements-dev.in
 #
-black==24.8.0
+black==25.1.0
     # via -r requirements-dev.in
 bleach==6.0.0
     # via readme-renderer
@@ -16,13 +16,13 @@ charset-normalizer==3.1.0
     # via requests
 click==8.0.1
     # via black
-coverage==7.6.1
+coverage==7.6.12
     # via -r requirements-dev.in
 cryptography==44.0.1
     # via secretstorage
 docutils==0.19
     # via readme-renderer
-flake8==7.1.1
+flake8==7.1.2
     # via
     #   -r requirements-dev.in
     #   flake8-formatter-junit-xml
@@ -32,11 +32,11 @@ id==1.5.0
     # via twine
 idna==3.7
     # via requests
-importlib-metadata==6.0.0
+importlib-metadata==8.6.1
     # via
     #   keyring
     #   twine
-isort==5.13.2
+isort==6.0.1
     # via -r requirements-dev.in
 jaraco-classes==3.2.3
     # via keyring
@@ -58,7 +58,7 @@ mdurl==0.1.2
     # via markdown-it-py
 more-itertools==9.1.0
     # via jaraco-classes
-mypy==1.14.1
+mypy==1.15.0
     # via -r requirements-dev.in
 mypy-extensions==1.0.0
     # via
@@ -101,7 +101,7 @@ six==1.16.0
     # via
     #   bleach
     #   junit-xml
-tomli==2.0.1
+tomli==2.2.1
     # via
     #   black
     #   mypy
@@ -120,5 +120,5 @@ urllib3==1.26.19
     #   twine
 webencodings==0.5.1
     # via bleach
-zipp==3.19.1
+zipp==3.21.0
     # via importlib-metadata
