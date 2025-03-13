@@ -6,9 +6,18 @@ SOURCES_ROOT = $(CURDIR)/src
 # Python
 PYTHON = python3
 PYTHON_PIP = $(PYTHON) -m pip
-PYTHON_PIP_VERSION_SPECIFIER = ==24.2
-PYTHON_SETUPTOOLS_VERSION_SPECIFIER = ==75.8.2
-PYTHON_WHEEL_VERSION_SPECIFIER = ==0.45.1
+PYTHON_PIP_VERSION_SPECIFIER = $(shell \
+	grep -E '^pip==.+' --no-filename --only-matching --no-messages -- requirements{,-dev}.{txt,in} \
+	| head -n 1 | sed 's/^pip//' \
+)
+PYTHON_SETUPTOOLS_VERSION_SPECIFIER = $(shell \
+	grep -E '^setuptools==.+' --no-filename --only-matching --no-messages -- requirements{,-dev}.{txt,in} \
+	| head -n 1 | sed 's/^setuptools//' \
+)
+PYTHON_WHEEL_VERSION_SPECIFIER = $(shell \
+	grep -E '^wheel==.+' --no-filename --only-matching --no-messages -- requirements{,-dev}.{txt,in} \
+	| head -n 1 | sed 's/^wheel//' \
+)
 PYTHON_VIRTUALENV_DIR = .pyenv
 PYTHON_PIP_TOOLS_VERSION_SPECIFIER = $(shell \
 	grep -E '^pip-tools==.+' --no-filename --only-matching --no-messages -- requirements{,-dev}.{txt,in} \
