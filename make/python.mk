@@ -6,7 +6,7 @@ PYTHON_SETUPTOOLS_VERSION_SPECIFIER ?= >=57.0.0
 PYTHON_WHEEL_VERSION_SPECIFIER ?= >=0.36.2
 PYTHON_PIP_TOOLS_VERSION_SPECIFIER ?= >=6.1.0
 PYTHON_PIP_TOOLS_SRC_FILES ?= requirements.in
-PYTHON_PIP_TOOLS_COMPILE_ARGS ?= --strip-extras --quiet
+PYTHON_PIP_TOOLS_COMPILE_ARGS ?= --allow-unsafe --strip-extras --quiet
 
 .PHONY: python-pip-install
 python-pip-install: ## Install Pip
