@@ -10,7 +10,10 @@ PYTHON_PIP_VERSION_SPECIFIER = ==24.2
 PYTHON_SETUPTOOLS_VERSION_SPECIFIER = ==75.8.2
 PYTHON_WHEEL_VERSION_SPECIFIER = ==0.45.1
 PYTHON_VIRTUALENV_DIR = .pyenv
-PYTHON_PIP_TOOLS_VERSION_SPECIFIER = ==7.4.1
+PYTHON_PIP_TOOLS_VERSION_SPECIFIER = $(shell \
+	grep -E '^pip-tools==.+' --no-filename --only-matching --no-messages -- requirements{,-dev}.{txt,in} \
+	| head -n 1 | sed 's/^pip-tools//' \
+)
 PYTHON_PIP_TOOLS_SRC_FILES = requirements.in requirements-dev.in
 
 # Django Admin
