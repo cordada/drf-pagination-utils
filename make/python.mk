@@ -6,6 +6,7 @@ PYTHON_SETUPTOOLS_VERSION_SPECIFIER ?= >=57.0.0
 PYTHON_WHEEL_VERSION_SPECIFIER ?= >=0.36.2
 PYTHON_PIP_TOOLS_VERSION_SPECIFIER ?= >=6.1.0
 PYTHON_PIP_TOOLS_SRC_FILES ?= requirements.in
+PYTHON_PIP_TOOLS_COMPILE_ARGS ?= --allow-unsafe --strip-extras --quiet
 
 .PHONY: python-pip-install
 python-pip-install: ## Install Pip
@@ -24,7 +25,7 @@ python-deps-compile: $(patsubst %,python-deps-compile-%,$(PYTHON_PIP_TOOLS_SRC_F
 python-deps-compile: ## Compile Python dependency manifests
 
 python-deps-compile-%:
-	pip-compile --strip-extras --quiet "$(*)"
+	pip-compile $(PYTHON_PIP_TOOLS_COMPILE_ARGS) "$(*)"
 
 .PHONY: python-deps-sync-check
 python-deps-sync-check: $(patsubst %,python-deps-sync-check-%,$(PYTHON_PIP_TOOLS_SRC_FILES))
