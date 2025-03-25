@@ -1,5 +1,21 @@
 # History
 
+## 1.5.3 (2025-03-25)
+
+- (PR #237, 2025-02-18) Change Black target version to match supported Python versions
+- (PR #238, 2025-02-18) Change Mypy Python version to match minimum supported version
+- (PR #239, 2025-02-28) Use most recent patch version of Python in CI/CD configuration
+- (PR #242, 2025-03-07) chore: Bump the production-dependencies group with 4 updates
+- (PR #243, 2025-03-07) chore: Bump django from 4.2.18 to 4.2.20
+- (PR #241, 2025-03-12) chore: Bump setuptools from 70.3.0 to 75.8.2
+- (PR #240, 2025-03-12) chore: Bump the development-dependencies group with 5 updates
+- (PR #244, 2025-03-12) deps: Update `pip` from 23.1.2 to 24.2
+- (PR #245, 2025-03-12) deps: Update `pip-tools` from 6.14.0 to 7.4.1
+- (PR #246, 2025-03-12) Replace hardcoded version of Pip Tools in Make variable
+- (PR #247, 2025-03-12) Add `--allow-unsafe` to Pip Compile arguments
+- (PR #248, 2025-03-13) Replace hardcoded versions of Pip and others in Make variables
+- (PR #249, 2025-03-24) Require Python ≥ 3.9
+
 ## 1.5.2 (2025-02-12)
 
 - (PR #234, 2025-02-12) Improve `clean-build` Make task
