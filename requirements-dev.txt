@@ -20,13 +20,13 @@ click==8.0.1
     # via
     #   black
     #   pip-tools
-coverage==7.6.12
+coverage==7.8.0
     # via -r requirements-dev.in
 cryptography==44.0.1
     # via secretstorage
 docutils==0.19
     # via readme-renderer
-flake8==7.1.2
+flake8==7.2.0
     # via
     #   -r requirements-dev.in
     #   flake8-formatter-junit-xml
@@ -80,11 +80,11 @@ pip-tools==7.4.1
     # via -r requirements-dev.in
 platformdirs==2.4.0
     # via black
-pycodestyle==2.12.1
+pycodestyle==2.13.0
     # via flake8
 pycparser==2.21
     # via cffi
-pyflakes==3.2.0
+pyflakes==3.3.2
     # via flake8
 pygments==2.15.0
     # via
