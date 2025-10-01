@@ -4,7 +4,7 @@
 #
 #    pip-compile --allow-unsafe --strip-extras requirements-dev.in
 #
-black==25.1.0
+black==25.9.0
     # via -r requirements-dev.in
 bleach==6.0.0
     # via readme-renderer
@@ -20,13 +20,13 @@ click==8.0.1
     # via
     #   black
     #   pip-tools
-coverage==7.8.0
+coverage==7.10.7
     # via -r requirements-dev.in
 cryptography==44.0.1
     # via secretstorage
 docutils==0.19
     # via readme-renderer
-flake8==7.2.0
+flake8==7.3.0
     # via
     #   -r requirements-dev.in
     #   flake8-formatter-junit-xml
@@ -39,9 +39,10 @@ idna==3.7
 importlib-metadata==8.6.1
     # via
     #   build
+    #   isort
     #   keyring
     #   twine
-isort==6.0.1
+isort==6.1.0
     # via -r requirements-dev.in
 jaraco-classes==3.2.3
     # via keyring
@@ -63,7 +64,7 @@ mdurl==0.1.2
     # via markdown-it-py
 more-itertools==9.1.0
     # via jaraco-classes
-mypy==1.15.0
+mypy==1.18.2
     # via -r requirements-dev.in
 mypy-extensions==1.0.0
     # via
@@ -75,16 +76,18 @@ packaging==24.2
     #   build
     #   twine
 pathspec==0.9.0
-    # via black
-pip-tools==7.4.1
+    # via
+    #   black
+    #   mypy
+pip-tools==7.5.0
     # via -r requirements-dev.in
 platformdirs==2.4.0
     # via black
-pycodestyle==2.13.0
+pycodestyle==2.14.0
     # via flake8
 pycparser==2.21
     # via cffi
-pyflakes==3.3.2
+pyflakes==3.4.0
     # via flake8
 pygments==2.15.0
     # via
@@ -94,6 +97,8 @@ pyproject-hooks==1.2.0
     # via
     #   build
     #   pip-tools
+pytokens==0.1.10
+    # via black
 readme-renderer==37.3
     # via twine
 requests==2.32.4
@@ -119,7 +124,7 @@ tomli==2.2.1
     #   build
     #   mypy
     #   pip-tools
-twine==6.1.0
+twine==6.2.0
     # via -r requirements-dev.in
 typing-extensions==4.12.2
     # via
