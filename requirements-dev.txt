@@ -131,7 +131,7 @@ typing-extensions==4.12.2
     #   mypy
 unittest-xml-reporting==3.2.0
     # via -r requirements-dev.in
-urllib3==2.5.0
+urllib3==2.6.3
     # via
     #   requests
     #   twine
