@@ -21,7 +21,7 @@ version = "1.5.3"
 dependencies = [
   "djangorestframework>=3.10.3",
 ]
-requires-python = ">=3.9"
+requires-python = ">=3.9, <3.11"
 authors = [
   {name = "Fyntex TI SpA", email = "no-reply@fyntex.ai"},
 ]
