@@ -1,5 +1,9 @@
 # History
 
+## 1.5.5 (2026-05-06)
+
+- (PR #295, 2026-05-06) chore(deps): Restrict python version to <3.11
+
 ## 1.5.4 (2026-05-06)
 
 - (PR #255, 2025-04-02) chore: Bump the development-dependencies group with 2 updates
