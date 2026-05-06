@@ -1,5 +1,20 @@
 # History
 
+## 1.5.4 (2026-05-06)
+
+- (PR #255, 2025-04-02) chore: Bump the development-dependencies group with 2 updates
+- (PR #256, 2025-04-02) chore: Bump setuptools from 75.8.2 to 78.1.0
+- (PR #260, 2025-05-14) chore: Bump django from 4.2.20 to 4.2.21
+- (PR #261, 2025-05-20) chore: Bump setuptools from 78.1.0 to 78.1.1
+- (PR #258, 2025-05-20) chore: Bump the production-dependencies group across 1 directory with 6 updates
+- (PR #265, 2025-06-09) chore: Bump django from 4.2.21 to 4.2.22
+- (PR #262, 2025-06-09) chore: Bump the production-dependencies group with 2 updates
+- (PR #266, 2025-06-09) chore: Bump requests from 2.32.2 to 2.32.4
+- (PR #268, 2025-06-30) deps: Update `requests-toolbelt` from 0.10.1 to 1.0.0
+- (PR #267, 2025-08-01) chore: Bump urllib3 from 1.26.19 to 2.5.0
+- (PR #282, 2025-12-15) chore: Bump django from 4.2.22 to 4.2.27
+- (PR #292, 2026-05-04) Drop support for Python 3.9
+
 ## 1.5.3 (2025-03-25)
 
 - (PR #237, 2025-02-18) Change Black target version to match supported Python versions
