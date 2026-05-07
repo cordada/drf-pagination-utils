@@ -1,5 +1,9 @@
 # History
 
+## 1.5.6 (2026-05-07)
+
+- (PR #298, 2026-05-07) fix release version
+
 ## 1.5.5 (2026-05-06)
 
 - (PR #295, 2026-05-06) chore(deps): Restrict python version to <3.11
