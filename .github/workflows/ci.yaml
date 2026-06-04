@@ -32,7 +32,7 @@ jobs:
 
     steps:
       - name: Check Out VCS Repository
-        uses: actions/checkout@v6.0.2
+        uses: actions/checkout@v6.0.3
 
       - name: Set Up Python ${{ matrix.python_version }}
         id: set_up_python
@@ -72,7 +72,7 @@ jobs:
 
     steps:
       - name: Check Out VCS Repository
-        uses: actions/checkout@v6.0.2
+        uses: actions/checkout@v6.0.3
 
       - name: Set Up Python ${{ matrix.python_version }}
         id: set_up_python
