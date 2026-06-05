@@ -40,6 +40,10 @@ jobs:
         with:
           python-version: "${{ matrix.python_version }}"
           check-latest: true
+      
+      - name: Upgrade pip and pip-tools
+        run: |
+          pip install --upgrade pip pip-tools
 
       - name: Create Python Virtual Environment
         run: make python-virtualenv PYTHON_VIRTUALENV_DIR=".pyenv"
@@ -48,7 +52,7 @@ jobs:
         uses: actions/cache@v5.0.5
         with:
           path: ".pyenv"
-          key: py-v1-deps-${{ runner.os }}-${{ steps.set_up_python.outputs.python-version }}-${{ hashFiles('requirements.txt') }}-${{ hashFiles('requirements-dev.txt') }}-${{ hashFiles('Makefile', 'make/**.mk') }}
+          key: py-v6-deps-${{ runner.os }}-${{ steps.set_up_python.outputs.python-version }}-${{ hashFiles('requirements.txt') }}-${{ hashFiles('requirements-dev.txt') }}-${{ hashFiles('Makefile', 'make/**.mk') }}
 
       - name: Install Dependencies
         run: |
@@ -85,7 +89,7 @@ jobs:
         uses: actions/cache@v5.0.5
         with:
           path: ".pyenv"
-          key: py-v1-deps-${{ runner.os }}-${{ steps.set_up_python.outputs.python-version }}-${{ hashFiles('requirements.txt') }}-${{ hashFiles('requirements-dev.txt') }}-${{ hashFiles('Makefile', 'make/**.mk') }}
+          key: py-v6-deps-${{ runner.os }}-${{ steps.set_up_python.outputs.python-version }}-${{ hashFiles('requirements.txt') }}-${{ hashFiles('requirements-dev.txt') }}-${{ hashFiles('Makefile', 'make/**.mk') }}
           fail-on-cache-miss: true
       - name: Test Report
         run: |
