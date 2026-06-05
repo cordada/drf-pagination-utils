@@ -8,7 +8,7 @@ asgiref==3.8.1
     # via django
 django==4.2.30
     # via djangorestframework
-djangorestframework==3.15.2
+djangorestframework==3.16.1
     # via -r requirements.in
 sqlparse==0.5.4
     # via django
