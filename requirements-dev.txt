@@ -12,7 +12,7 @@ build==1.2.2.post1
     # via pip-tools
 certifi==2024.7.4
     # via requests
-cffi==1.15.1
+cffi==2.0.0
     # via cryptography
 charset-normalizer==3.1.0
     # via requests
@@ -22,7 +22,7 @@ click==8.0.1
     #   pip-tools
 coverage==7.10.7
     # via -r requirements-dev.in
-cryptography==44.0.1
+cryptography==48.0.1
     # via secretstorage
 docutils==0.19
     # via readme-renderer
@@ -37,7 +37,11 @@ id==1.5.0
 idna==3.15
     # via requests
 importlib-metadata==8.6.1
-    # via keyring
+    # via
+    #   build
+    #   isort
+    #   keyring
+    #   twine
 isort==6.1.0
     # via -r requirements-dev.in
 jaraco-classes==3.2.3
@@ -128,6 +132,7 @@ typing-extensions==4.15.0
     # via
     #   -c requirements.txt
     #   black
+    #   cryptography
     #   mypy
 unittest-xml-reporting==3.2.0
     # via -r requirements-dev.in
