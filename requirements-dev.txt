@@ -99,7 +99,7 @@ pytokens==0.4.1
     # via black
 readme-renderer==37.3
     # via twine
-requests==2.32.4
+requests==2.33.0
     # via
     #   id
     #   requests-toolbelt
