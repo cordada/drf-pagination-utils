@@ -6,7 +6,7 @@
 #
 black==25.11.0
     # via -r requirements-dev.in
-bleach==6.0.0
+bleach==6.4.0
     # via readme-renderer
 build==1.2.2.post1
     # via pip-tools
@@ -113,9 +113,7 @@ rich==13.3.2
 secretstorage==3.3.3
     # via keyring
 six==1.16.0
-    # via
-    #   bleach
-    #   junit-xml
+    # via junit-xml
 tomli==2.2.1
     # via
     #   black
