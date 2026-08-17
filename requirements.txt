@@ -10,7 +10,7 @@ django==5.2.14
     # via djangorestframework
 djangorestframework==3.16.1
     # via -r requirements.in
-sqlparse==0.5.5
+sqlparse==0.6.0
     # via django
 typing-extensions==4.15.0
     # via asgiref
